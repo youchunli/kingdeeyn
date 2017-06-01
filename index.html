@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<title>主页</title>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/IndexCss.css" />
+		<link href="css/mislider.css" rel="stylesheet">
+		<link href="css/mislider-skin-cameo.css" rel="stylesheet">
+		<script type="text/javascript" src="js/html5shiv/html5shiv.min.js"></script>
+		<script type="text/javascript" src="js/Index.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script src="js/mislider.js"></script>
+		<!-- Load modernizr or html5shiv -->
+		<script src="js/modernizr.min.js"></script>
+		<script>
+			window.modernizr || document.write('<script src="lib/modernizr/modernizr-custom.js"><\/script>')
+		</script>
+		<script>
+			window.jQuery || document.write('<script src="lib/jquery/jquery.js"><\/script>')
+		</script>
+
+		<!-- Load miSlider -->
+
+		<!-- Apply other styles -->
+		<!--<link href='http://fonts.useso.com/css?family=Roboto+Condensed:400|Roboto:500' rel='stylesheet'>-->
+
+	</head>
+
+	<body>
+		<div>
+
+			<div class="navbar navbar-default" style="overflow:hidden;position: relative;">
+				<div class="navbar-header">
+
+					<button class="navbar-toggle" data-toggle="collapse" data-target="#shownav">
+                		<span class="icon-bar"></span>
+                		<span class="icon-bar"></span>
+                		<span class="icon-bar"></span>
+            		</button>
+					<a class="navbar-brand" href="/">
+						<figure class="ac-logo-icon "></figure>
+						<div class="logo-pc-div app-none">
+							<figure class="ac-familybrowser-icon"></figure>
+						</div>
+					</a>
+				</div>
+
+				<ul id="shownav" class="nav navbar-nav collapse navbar-collapse">
+					<li>
+						<a href="index.html" style="color: #5CB85C;	">首页</a>
+						<p class="lineli"></p>
+					</li>
+					<li>
+						<a href="plan.html">
+							解决方案
+						</a>
+						<p></p>
+					</li>
+					<li>
+						<a href="product.html">产品</a>
+						<p></p>
+					</li>
+					<li>
+						<a href="server.html">服务</a>
+						<p></p>
+					</li>
+					<li>
+						<a href="about.html">关于我们</a>
+					</li>
+				</ul>
+
+			</div>
+
+			<!--头部导航及logo结束-->
+
+			<!--图片轮播-->
+
+			<div id="myCarousel" class="carousel slide">
+				<!-- 轮播（Carousel）指标 -->
+				<ol class="">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<!-- 轮播（Carousel）项目 -->
+				<div class="carousel-inner" style="margin-top: -20px;">
+					<div class="item active">
+						<img src="images/bg2(1).jpg" alt="First slide">
+					</div>
+					<div class="item">
+						<img src="images/bg2(1).jpg" alt="Second slide">
+					</div>
+					<div class="item">
+						<img src="images/bg2(1).jpg" alt="Third slide">
+					</div>
+				</div>
+				<!-- 轮播（Carousel）导航 -->
+				<a class="carousel-control left" href="#myCarousel" data-slide="prev"><img src="images/left.png" /> </a>
+				<a class="carousel-control right" href="#myCarousel" data-slide="next"><img src="images/right.png" /> </a>
+			</div>
+
+			<!--         文字-->
+			<div class="font">
+				<div class="row">
+					<div class="center-block" style="margin-top:30px; padding:0 10%;">
+						<div class="title">金蝶让数据驱动成功</div>
+						<hr class="line" />
+						<div class="content1">金蝶致力成为值得信赖的大数据服务公司，已经为世界范围内600多万家企业，政府等公共组织<br> 提供管理软件产品，云服务及互联网金融等服务，在ERP,财务共享，人力资源管理，行业解决方案等等领域走在行业前列
+							<br> 并连续12年位居中小企业ERP市场第一
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+			<!--图片轮播结束-->
+
+			<!--略缩图轮播	-->
+			<div class="ThumbNailImgBox">
+				<div class="row">
+					<div class="center-block" id="ThumbNailImg">
+
+						<div class="well" style="background:none; border:0; -webkit-box-shadow:none;">
+							<div id="imgCarousel" class="carousel slide" data-ride="carousel">
+
+								<!-- Carousel items -->
+								<div class="carousel-inner">
+									<div class="item active">
+										<div class="row">
+											<div class="col-lg-3  small-12">
+												<div class="thumbnail" style=" border: none;">
+													<img src="img/p4.jpg" alt="通用的占位符缩略图" style="width: 270px; height: 270px;">
+													<div class="caption" id="center">
+														<div class="title">金蝶EAS</div>
+														<hr class="line" />
+														<div class="ThumbNailImg1">EAS位为集团企业提供全面<br>覆盖财务共享，供应链，销售，采购电商，多工程制造的解决方案</div>
+
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3  small-12">
+												<div class="thumbnail" style=" border: none;">
+													<img src="img/p1.jpg" alt="通用的占位符缩略图" style="width: 270px; height: 270px;">
+													<div class="caption" id="center">
+														<div class="title">金蝶EAS</div>
+														<hr class="line" />
+														<div class="ThumbNailImg1">EAS位为集团企业提供全面<br>覆盖财务共享，供应链，销售，采购电商，多工程制造的解决方案</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3  small-12">
+												<div class="thumbnail" style=" border: none;">
+													<img src="img/p2.jpg" alt="通用的占位符缩略图" style="width: 270px; height: 270px;">
+													<div class="caption" id="center">
+														<div class="title">金蝶EAS</div>
+														<hr class="line" />
+														<div class="ThumbNailImg1">EAS位为集团企业提供全面<br>覆盖财务共享，供应链，销售，采购电商，多工程制造的解决方案</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3  small-12">
+												<div class="thumbnail" style=" border: none;">
+													<img src="img/p3.jpg" alt="通用的占位符缩略图" style="width: 270px; height: 270px;">
+													<div class="caption" id="center">
+														<div class="title">金蝶EAS</div>
+														<hr class="line" />
+														<div class="ThumbNailImg1">EAS位为集团企业提供全面<br>覆盖财务共享，供应链，销售，采购电商，多工程制造的解决方案</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--/row-->
+									</div>
+									<!--/item-->
+									<div class="item">
+										<div class="row">
+											<div class="col-lg-3  small-12">
+												<div class="thumbnail" style=" border: none;">
+													<img src="img/p4.jpg" alt="通用的占位符缩略图" style="width: 270px; height: 270px;">
+													<div class="caption" id="center">
+														<div class="title">金蝶EAS</div>
+														<hr class="line" />
+														<div class="ThumbNailImg1">EAS位为集团企业提供全面覆盖财务共享，供应</div>
+														<div class="ThumbNailImg2">链，销售，采购电商，多工程制造的解决方案</div>
+
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3  small-12">
+												<div class="thumbnail" style=" border: none;">
+													<img src="img/p1.jpg" alt="通用的占位符缩略图" style="width: 270px; height: 270px;">
+													<div class="caption" id="center">
+														<div class="title">金蝶EAS</div>
+														<hr class="line" />
+														<div class="ThumbNailImg1">EAS位为集团企业提供全面覆盖财务共享，供应</div>
+														<div class="ThumbNailImg2">链，销售，采购电商，多工程制造的解决方案</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3  small-12">
+												<div class="thumbnail" style=" border: none;">
+													<img src="img/p2.jpg" alt="通用的占位符缩略图" style="width: 270px; height: 270px;">
+													<div class="caption" id="center">
+														<div class="title">金蝶EAS</div>
+														<hr class="line" />
+														<div class="ThumbNailImg1">EAS位为集团企业提供全面覆盖财务共享，供应</div>
+														<div class="ThumbNailImg2">链，销售，采购电商，多工程制造的解决方案</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3  small-12">
+												<div class="thumbnail" style=" border: none;">
+													<img src="img/p3.jpg" alt="通用的占位符缩略图" style="width: 270px; height: 270px;">
+													<div class="caption" id="center">
+														<div class="title">金蝶EAS</div>
+														<hr class="line" />
+														<div class="ThumbNailImg1">EAS位为集团企业提供全面覆盖财务共享，供应</div>
+														<div class="ThumbNailImg2">链，销售，采购电商，多工程制造的解决方案</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--/row-->
+									</div>
+									<!--/item-->
+									<div class="item">
+										<div class="row">
+											<div class="col-lg-3  small-12">
+												<div class="thumbnail" style=" border: none;">
+													<img src="img/p4.jpg" alt="通用的占位符缩略图" style="width: 270px; height: 270px;">
+													<div class="caption" id="center">
+														<div class="title">金蝶EAS</div>
+														<hr class="line" />
+														<div class="ThumbNailImg1">EAS位为集团企业提供全面覆盖财务共享，供应</div>
+														<div class="ThumbNailImg2">链，销售，采购电商，多工程制造的解决方案</div>
+
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3  small-12">
+												<div class="thumbnail" style=" border: none;">
+													<img src="img/p1.jpg" alt="通用的占位符缩略图" style="width: 270px; height: 270px;">
+													<div class="caption" id="center">
+														<div class="title">金蝶EAS</div>
+														<hr class="line" />
+														<div class="ThumbNailImg1">EAS位为集团企业提供全面覆盖财务共享，供应</div>
+														<div class="ThumbNailImg2">链，销售，采购电商，多工程制造的解决方案</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3  small-12">
+												<div class="thumbnail" style=" border: none;">
+													<img src="img/p2.jpg" alt="通用的占位符缩略图" style="width: 270px; height: 270px;">
+													<div class="caption" id="center">
+														<div class="title">金蝶EAS</div>
+														<hr class="line" />
+														<div class="ThumbNailImg1">EAS位为集团企业提供全面覆盖财务共享，供应</div>
+														<div class="ThumbNailImg2">链，销售，采购电商，多工程制造的解决方案</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3  small-12">
+												<div class="thumbnail" style=" border: none;">
+													<img src="img/p3.jpg" alt="通用的占位符缩略图" style="width: 270px; height: 270px;">
+													<div class="caption" id="center">
+														<div class="title">金蝶EAS</div>
+														<hr class="line" />
+														<div class="ThumbNailImg1">EAS位为集团企业提供全面覆盖财务共享，供应</div>
+														<div class="ThumbNailImg2">链，销售，采购电商，多工程制造的解决方案</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--/row-->
+									</div>
+									<!--/item-->
+								</div>
+								<!--/carousel-inner-->
+
+								<a class="left carousel-control" href="#imgCarousel" data-slide="prev" style="background:none; font-size:46px;">‹</a>
+
+								<a class="right carousel-control" href="#imgCarousel" data-slide="next" style="background:none; font-size:46px;">›</a>
+
+							</div>
+							<!--/myCarousel-->
+						</div>
+						<!--/well-->
+
+					</div>
+				</div>
+
+			</div>
+			<!--略缩图轮播结束	-->
+
+			<!--
+            	作者：15288354992@163.com
+            	时间：2017-04-25
+            	描述：六小盒子
+            -->
+			<div class="six_box">
+				<div class="box_title_div">
+					<div class="box_title">
+						云管理帮助中国企业实现转型升级梦想
+					</div>
+					<hr class="bline" />
+				</div>
+
+				<!--小盒子-->
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4  large-3 small-12">
+							<div class="sou_a">
+
+								<figure class="icon_a"></figure>
+
+								<h4>房地产行业</h4>
+
+								<div class="sou_int">
+									构建统一的门户和集成应用，是真正的从项目
+								</div>
+
+								<div class="sou_int">
+									运营层面到公司经营层面的一体化应用，为房地产企业
+								</div>
+
+								<div class="sou_int">
+									提供基于各种业务管理的全面管理平台
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4  large-3 small-12">
+							<div class="sou_b">
+								<figure class="icon_b"></figure>
+								<h4>房地产行业</h4>
+								<div class="sou_int">
+									构建统一的门户和集成应用，是真正的从项目
+								</div>
+								<div class="sou_int">
+									运营层面到公司经营层面的一体化应用，为房地产企业
+								</div>
+								<div class="sou_int">
+									提供基于各种业务管理的全面管理平台
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4  large-3 small-12">
+							<div class="sou_c">
+								<figure class="icon_c"></figure>
+								<h4>房地产行业</h4>
+								<div class="sou_int">
+									构建统一的门户和集成应用，是真正的从项目
+								</div>
+								<div class="sou_int">
+									运营层面到公司经营层面的一体化应用，为房地产企业
+								</div>
+								<div class="sou_int">
+									提供基于各种业务管理的全面管理平台
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4  large-3 small-12">
+							<div class="sou_d">
+
+								<figure class="icon_d"></figure>
+
+								<h4>房地产行业</h4>
+
+								<div class="sou_int">
+									构建统一的门户和集成应用，是真正的从项目
+								</div>
+
+								<div class="sou_int">
+									运营层面到公司经营层面的一体化应用，为房地产企业
+								</div>
+
+								<div class="sou_int">
+									提供基于各种业务管理的全面管理平台
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4  large-3 small-12">
+							<div class="sou_e">
+								<figure class="icon_e"></figure>
+								<h4>房地产行业</h4>
+								<div class="sou_int">
+									构建统一的门户和集成应用，是真正的从项目
+								</div>
+								<div class="sou_int">
+									运营层面到公司经营层面的一体化应用，为房地产企业
+								</div>
+								<div class="sou_int">
+									提供基于各种业务管理的全面管理平台
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4  large-3 small-12">
+							<div class="sou_f">
+								<figure class="icon_f"></figure>
+								<h4>房地产行业</h4>
+								<div class="sou_int">
+									构建统一的门户和集成应用，是真正的从项目
+								</div>
+								<div class="sou_int">
+									运营层面到公司经营层面的一体化应用，为房地产企业
+								</div>
+								<div class="sou_int">
+									提供基于各种业务管理的全面管理平台
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--小图片轮播		-->
+			<div style="margin-top:-40px;">
+				<div style="height:100px;background-color:#f8f8f8;">
+					<div style="text-align: center;font-size: 24px; padding-top: 20px;">客户案例</div>
+					<hr style="height: 1px;border: none;border-top: 2px solid #046684;width:60px;" />
+				</div>
+
+				<div id="wrapper">
+					<figure>
+						<div class="mis-stage" style=" 	background:#f8f8f8;">
+							<!-- The element to select and apply miSlider to - the class is optional -->
+							<ol class="mis-slider">
+								<!-- The slider element - the class is optional -->
+								<li class="mis-slide">
+									<!-- A slide element - the class is optional -->
+									<a href="#" class="mis-container">
+										<!-- A slide container - this element is optional, if absent the plugin adds it automatically -->
+										<figure>
+											<!-- Slide content - whatever you want -->
+											<img src="images/c1.png" alt="图片加载失败">
+											<figcaption>嘉华</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li class="mis-slide">
+									<a href="#" class="mis-container">
+										<figure>
+											<img src="images/c1_h.png" alt="图片加载失败">
+											<figcaption>嘉华</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li class="mis-slide">
+									<a href="#" class="mis-container">
+										<figure>
+											<img src="images/c2.png" alt="图片加载失败">
+											<figcaption>嘉华</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li class="mis-slide">
+									<a href="#" class="mis-container">
+										<figure>
+											<img src="images/c3.png" alt="图片加载失败">
+											<figcaption>嘉华</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li class="mis-slide">
+									<a href="#" class="mis-container">
+										<figure>
+											<img src="images/c3_h.png" alt="图片加载失败">
+											<figcaption>嘉华</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li class="mis-slide">
+									<a href="#" class="mis-container">
+										<figure>
+											<img src="images/c4.png" alt="图片加载失败">
+											<figcaption>嘉华</figcaption>
+										</figure>
+									</a>
+								</li>
+								<li class="mis-slide">
+									<a href="#" class="mis-container">
+										<figure>
+											<img src="images/c5.png" alt="图片加载失败">
+											<figcaption>嘉华</figcaption>
+										</figure>
+									</a>
+								</li>
+							</ol>
+						</div>
+						
+					</figure>
+				</div>
+			</div>
+			<!--小图片轮播结束-->
+			<!--<iframe src="indexbottom.html" ></iframe>-->
+
+			<!--荣誉展示开始-->
+			<!--荣誉展示开始-->
+			<div class="honor">
+
+				<div class="container">
+					<div class="row">
+
+						<div class="row">
+							<div class="col-sm-12 col-md-3">
+								<div class="thumbnail" style="border: none;background-color:rgba(0,0,0,0);">
+									<img src="images/h1.png" alt="通用的占位符缩略图">
+									<div class="caption" style="text-align:center ;">
+										<h4 style="color: #fff;">缩略图标签</h4>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-12 col-md-3">
+								<div class="thumbnail" style="border: none;background-color:rgba(0,0,0,0);">
+									<img src="images/h2.png" alt="通用的占位符缩略图">
+									<div class="caption" style="text-align:center ;">
+										<h4 style="color: #fff;">缩略图标签</h4>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-12 col-md-3">
+								<div class="thumbnail" style="border: none;background-color:rgba(0,0,0,0);">
+									<img src="images/h3.png" alt="通用的占位符缩略图">
+									<div class="caption" style="text-align:center ;">
+										<h4 style="color: #fff;">缩略图标签</h4>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-12 col-md-3">
+								<div class="thumbnail" style="border: none;background-color:rgba(0,0,0,0);">
+									<img src="images/more.png" alt="通用的占位符缩略图">
+									<div class="caption" style="text-align:center ;">
+										<h4 style="color: #fff;">缩略图标签</h4>
+
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="honor_int">
+					昆明苏博泰克计算机有限公司成立于1999年，公司自成立之日起<br/> 立志成为全省广大金蝶用户的首选管理软件产品咨询和服务提供商。公司成立至今共获得
+					<br/> “K/3钻石合作伙伴称号以及最佳业绩奖”、“KIS白金合作伙伴”、“金蝶K/3精英伙伴”、“KIS钻石级经销商”等多项荣誉
+					<br/> 来之不易的荣誉激励着我们朝着更艰难的前方迈进、为广大金蝶用户创造更多的价值！
+					<br/>
+
+				</div>
+			</div>
+
+		</div>
+		<!--荣誉展示结束-->
+		<div id="hh">
+			<div class="row">
+				<!--联系方式开始-->
+				<div class="col-lg-4 col-md-4 col-lg-12">
+
+					<div class="newsa">
+						<div class="newsleft">
+							<img src="images/logo2.png" class="logo_2">
+
+							<div class="aboutCompany">
+								<span> <img src="images/add.png" width="20" height="20"></span>
+								<p> 昆明市东风东路36号建工大厦22楼2201室</p>
+							</div>
+
+							<div class="aboutCompany">
+								<span> <img src="images/phone.png" width="20" height="20"></span>
+
+								<p>0871-63162219&nbsp; &nbsp;63163278</p>
+							</div>
+
+							<div class="aboutCompany">
+								<span> <img src="images/mail.png" width="20" height="20"></span>
+								<p>kingdeeyn@kingdeeyn.com</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--联系方式结束-->
+
+				<!--新闻资讯开始-->
+				<div class="col-lg-4 col-md-4 col-lg-12">
+					<div class="news">
+						<div class="newslist">
+
+							<UL>
+								<li style="font-size:18px; list-style:none;">最新动态
+									<a href="#">more</a>
+									</i>
+									<li>塑造企业活力，金蝶中国总裁孙雁 …
+										<a>2017-03-08</a>
+									</Li>
+									<li>金蝶集团高级副总裁、蝶金 …
+										<a>2017-03-08</a>
+									</Li>
+									<li>昆明苏博泰克顾问学院招生 …
+										<a>2017-03-08</a>
+									</Li>
+									<li>苏博泰克2016年金蝶狼之 …
+										<a>2017-03-08</a>
+									</Li>
+									<li>塑造企业活力，金蝶中国总 …
+										<a>2017-03-08</a>
+									</Li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+				<!--新闻资讯结束-->
+				<div class="col-lg-4 col-md-4 col-lg-12">
+					<div class="newsc">
+						<video class="video" controls poster="images/video.png" style=" 
+    border-radius: 3px;
+    height: 100%;
+	width:100%; padding:0 10%;">
+							<source src="video/video.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!--公司相关开始-->
+
+		<!--公司相关结束-->
+
+		<!--备案开始-->
+		<div class="icp">
+			<label>昆明苏博泰克计算机有限公司 | 版权所有 | 滇ICP备11006605号</label>
+		</div>
+		<!--备案结束-->
+
+		</div>
+
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,141 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+-webkit-scrollbar {
+	display: none;
+	height: 0;
+	width: 0;
+}
+.carousel-control {
+	filter: alpha(opacity=0);
+}
+
+#title {
+	width: 90%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	list-style: none;
+	background-color: #f2f2f2;
+	text-align: center;
+	line-height: 40px;
+	font-size: 12px;
+	color: #999999;
+}
+
+.activetitle {
+	color: #333333;
+}
+
+header,
+nav,
+section,
+footer,
+section,
+article {
+	/*HTML5 定义了八个新的语义 HTML 元素。所有都是块级元素。
+您可以把 CSS display 属性设置为 block，以确保老式浏览器中正确的行为*/
+	display: block;
+}
+
+.header {
+	/*头部logo*/
+	height: 55px;
+	width: 100%;
+	background-color: white;
+	position: absolute;
+	z-index: 99;
+	top: 0;
+	right: 0;
+	margin-top: -10px;
+}
+
+#headBox {
+	width: 20%;
+	height: 38px;
+	float: left;
+	margin-left: 40px;
+}
+
+.headerlogo {
+	height: 36px;
+	width: 273px;
+}
+
+.nava {
+	width: 65%;
+	height: 32px;
+	margin-left: 40px;
+	float: left;
+	font-size: 20px;
+	color: #046684;
+	background-color: white;
+	margin-top: 10px;
+}
+
+.nava a {
+	margin-left: 50px;
+}
+
+.ac-logo-icon {
+	background-repeat: no-repeat;
+	background-image: url(../img/logo.png);
+	background-size: 180px 24px;
+	/*宽高*/
+	height: 24px;
+	width: 180px;
+	margin-right: 8px;
+	float: left;
+	margin-left: 10px;
+}
+
+
+/*@media screen and (max-width:700px) {
+.ac-logo-icon {
+display: none;
+	}
+}*/
+
+.app-none {
+	display: none
+}
+
+.ac-familybrowser-icon {
+	background-repeat: no-repeat;
+	background-image: url(../img/c3.png) background-size: 80px 56px;
+	width: 80px;
+	height: 56px;
+	margin: 0 auto;
+	background-position: center;
+	text-align: center
+}
+#shownav {
+	color:#0185ac;
+
+}
+
+#shownav li a {
+	margin-left: 40px;
+	color: #046684;
+	font-size: 18px;
+}
+
+#shownav li a {
+	margin-left: 40px;
+	color: #046684;
+}
+.lineli{
+	border-top: 1px solid #5CB85C;
+	width:15px;
+	margin-top: -5px;
+	margin-left:80px;
+
+}
+
+#shownav li:hover a {
+
+
+}
