@@ -44,6 +44,27 @@ color: #0185ac;
 	margin-left:65px;
 
 }
+.about-banner-div {
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+
+.about-banner {
+	width: 100%;
+	height: anto
+}
+
+.about-banner-p {
+	position: absolute;
+	z-index: 2;
+	left: 10%;
+	top: 40%;
+	font-size: 24px;
+	color: #ffffff;
+	letter-spacing: 3px;
+}
+
 
 #shownav li:hover a {
 
